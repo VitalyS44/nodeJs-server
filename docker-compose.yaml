@@ -1,0 +1,10 @@
+version: "3.1"
+
+services: 
+    express:
+        build: 
+            context: .
+        ports: 
+            - 80:8080
+        volumes: 
+            - ./public:/usr/src/app/public:cached
